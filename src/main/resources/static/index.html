@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/toDoListStyle.css">
+</head>
+
+<body>
+    <div class="container col-12">
+        <div class="border">
+            <h1><i class="fas fa-check"></i> <strong>Todo</strong>List</h1>
+            <div class="input-wrapper">
+                <div id="input-text" class="input-group">
+                    <input id="task-content" type="text" maxlength="150" class="form-control "
+                        placeholder="Write something to add..." aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
+                    <div id="add-button">
+                        <button id="task-add-button" class="btn" type="button">+</button>
+                    </div>
+                </div>
+                <div id="category-wrapper" class="hidden row">
+                    
+                </div>
+            </div>
+            <div class="block-of-list">
+                <h5>Your list:</h5> 
+                <div id="tasks-numbers">
+                    <span>Tasks svolti: </span><span id="task-counter"></span>
+                </div>
+                
+                <div id="tasks-list" class="text-position">
+
+
+                </div>
+               
+                <div id="is-empty">Your list is empty</div>
+            </div>
+            <div class="remove-wrapper">
+                <div id="remove-item-list" class="remove-item-list">Remove all</div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/toDoListScript.js"></script>
+</body>
+
+</html>
